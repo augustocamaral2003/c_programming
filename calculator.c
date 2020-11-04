@@ -83,6 +83,7 @@ int main(void) {
     int type;
     double op2;
     char s[MAXOP];
+    double last = 0.0;
 
     while ((type = getop(s)) != EOF) {
         switch (type) {
@@ -126,8 +127,12 @@ int main(void) {
                 op2 = pop();
                 push(pow(pop(), op2));
                 break;
+            case 'l':
+                push(last);
+                break;
             case '\n':
-                printf("\t%.8g\n", pop());
+                last = pop();
+                printf("\t%.8g\n", last);
                 break;
             default:
                 printf("error: unknown command %s\n", s);
