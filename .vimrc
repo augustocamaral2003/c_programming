@@ -31,7 +31,7 @@ set fileencoding=utf-8
 
 command TexPDF write | silent !pdflatex -synctex=1 -interaction=nonstopmode %:t && %:r.pdf
 command PyRun write | !python3 %:t
-command CRun write | !clear; gcc -std=c11 -Wall %:t -o %:r; ./%:r 
+command CRun write | !clear; gcc -std=c11 -Wall %:t -o %:r -lm; ./%:r 
 command TexSection r ~\.vim\section.txt
 command TexPreamble r ~\.vim\preamble.txt
 command TexPDFV write | !pdflatex -synctex=1 -interaction=nonstopmode %:t && %:r.pdf
