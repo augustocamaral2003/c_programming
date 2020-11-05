@@ -132,7 +132,11 @@ int main(void) {
                 break;
             case '\n':
                 last = pop();
-                printf("\t%.8g\n", last);
+                printf("\t=%.8g\n", last);
+                break;
+            case 'R':
+                op2 = pop();
+                push(pow(pop(), 1/op2));
                 break;
             default:
                 printf("error: unknown command %s\n", s);
