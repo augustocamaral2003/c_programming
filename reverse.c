@@ -1,7 +1,7 @@
-#include <stdio.h>
-
 //reverse.c
 //reverses input line by line
+
+#include <stdio.h>
 
 #define MAXLINE 1000
 

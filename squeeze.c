@@ -1,7 +1,7 @@
-#include <stdio.h>
-
 //squeeze.c
 //removes chars in s2 from s1
+
+#include <stdio.h>
 
 //squeeze: remove chars in s2 from s1
 void squeeze(char s1[], char s2[]) {

@@ -1,5 +1,9 @@
+//strend.c
+//verifies if string b appears at the end of string a with pointers
+
 #include <stdio.h>
 
+//strend: verifies if b appears at the end of a
 int strend(char *a, char *b) {
     char* pos = b;
     while (*a++ != '\0')

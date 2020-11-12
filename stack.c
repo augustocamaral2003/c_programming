@@ -1,3 +1,6 @@
+//stack.c
+//implementation of stack in c
+
 #include <stdio.h>
 
 #define MAXVAL 1000
@@ -7,6 +10,15 @@ typedef struct {
     double stack[MAXVAL];
 } Stack;
 
+//createStack: return stack at position 0
+Stack createStack(void) {
+    Stack stack;
+    stack.pos = 0;
+
+    return stack;
+}
+
+//push: push value into stack, update pos
 void push(Stack* stack, double n) {
     if (stack->pos < MAXVAL)
         stack->stack[stack->pos++] = n;
@@ -14,6 +26,7 @@ void push(Stack* stack, double n) {
         printf("stack error: full stack\n");
 }
 
+//pop: pop value from stack, update pos
 double pop(Stack* stack) {
     if (stack->pos > 0) {
         return stack->stack[--stack->pos];
@@ -24,11 +37,10 @@ double pop(Stack* stack) {
 }
 
 int main(void) {
-    Stack stack1;
-    stack1.pos = 0;
+    Stack stack = createStack();
 
-    push(&stack1, 30);
-    printf("%f\n", pop(&stack1));
+    push(&stack, 30);
+    printf("%f\n", pop(&stack));
 
     return 0;
 }

@@ -1,7 +1,7 @@
-#include <stdio.h>
-
 //lower_conditional.c
 //converts upper-case chars to lower-case using conditional expressions
+
+#include <stdio.h>
 
 //lower: converts chars to lower-case
 void lower(char s[]) {

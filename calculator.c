@@ -1,3 +1,6 @@
+//calculator.c
+//calculator in polish notation
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>

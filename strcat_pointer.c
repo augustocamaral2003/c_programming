@@ -1,5 +1,9 @@
+//strcat_pointer.c
+//implementation of concatenation with pointers
+
 #include <stdio.h>
 
+//nstrcat: concatenates string b at the end of string a
 void nstrcat(char *a, char *b) {
     while (*(++a) != '\0')
         ;

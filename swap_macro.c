@@ -1,3 +1,6 @@
+//swap_macro.c
+//swap function using macro and variables scope
+
 #include <stdio.h>
 
 #define swap(t, x, y) if(1){t temp = x; x = y; y = temp;}

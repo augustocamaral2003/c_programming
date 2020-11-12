@@ -1,10 +1,10 @@
+//expand.c
+//expands shorthand a-z or 0-9 into abc...xyz 012..789
+
 #include <stdio.h>
 #include <ctype.h>
 
 #define MAXLINE 1000
-
-//expand.c
-//expands shorthand a-z or 0-9 into abc...xyz 012..789
 
 //getline: read line into s, return length
 int getline(char s[], int lim) {

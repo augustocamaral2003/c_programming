@@ -1,7 +1,7 @@
-#include <stdio.h>
-
 //histogram.c
 //outputs a histogram showing the lenght of the imput words
+
+#include <stdio.h>
 
 int main(void) {
     int c, l = 0;

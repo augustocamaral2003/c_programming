@@ -1,7 +1,7 @@
-#include <stdio.h>
-
 //histogram_char.c
 //outputs a histogram showing the occurence of chars in input
+
+#include <stdio.h>
 
 int main(void) {
     int c;

@@ -1,7 +1,7 @@
-#include <stdio.h>
-
 //wrap.c
 //wrapes lines greater than WRAP into next line
+
+#include <stdio.h>
 
 #define MAXLINE 1000
 #define WRAP    80

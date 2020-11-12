@@ -1,7 +1,7 @@
-#include <stdio.h>
-
 //escape.c
 //shows escape sequences visibly
+
+#include <stdio.h>
 
 int main(void) {
     char c;
